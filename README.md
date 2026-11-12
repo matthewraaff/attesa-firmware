@@ -1,6 +1,6 @@
 # BNR32 ATTESA E-TS/ABS controller ROMs
 
-Mask ROM dumps from a 1989 Nissan Skyline GT-R (BNR32) ATTESA E-TS/ABS controller, Nissan 47850-05U00. Two stacked boards, K3486105U00 and K3484105U00.
+Mask ROM dumps from a 1989 Nissan Skyline GT-R (BNR32) ATTESA E-TS/ABS controller, Nissan 47850-05U00.
 
 | File | Chip | Marking | Size | CRC32 | SHA-256 |
 |---|---|---|---|---|---|
