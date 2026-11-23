@@ -3,10 +3,10 @@
 
 Mask ROM dumps from a 1989 Nissan Skyline GT-R (BNR32) ATTESA E-TS/ABS controller, Nissan 47850-05U00.
 
-| File | Chip | Marking | Size | CRC32 |
-|---|---|---|---|---|
-| `IC1_3B1Y0K32PJ_C000-FFFF.bin` | Hitachi HD63B01Y0 (SDIP-64, top board) | `3B1Y0K32PJ 9F1` | 16384 | `7CBF3437` |
-| `IC3_K3486205U00.bin` | NEC uPD78C14 (QUIP-64, bottom board) | `K3486205U00 442 8917E1` | 16384 | `F1E608CE` |
+| File | Chip | Marking | Size | CRC32 | Disassembly |
+|---|---|---|---|---|---|
+| `IC1_3B1Y0K32PJ_C000-FFFF.bin` | Hitachi HD63B01Y0 (SDIP-64, top board) | `3B1Y0K32PJ 9F1` | 16384 | `7CBF3437` | [IC1 ASM](disassembly/IC1_3B1Y0K32PJ_C000-FFFF.asm) |
+| `IC3_K3486205U00.bin` | NEC uPD78C14 (QUIP-64, bottom board) | `K3486205U00 442 8917E1` | 16384 | `F1E608CE` | [IC3 ASM](disassembly/IC3_K3486205U00.asm) |
 
 ```text
 63d8b9fd87099853f9a18c195a639b8b5d61c72679ad4dcef776d33f15ef0276 *IC1_3B1Y0K32PJ_C000-FFFF.bin
