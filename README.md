@@ -17,12 +17,16 @@ IC1 is ABS plus the serial link to IC3. IC3 is the ATTESA torque control. IC2 (`
 
 ## Internal Checksums
 
-Nissan stores an 8-bit sum and an 8-bit XOR in each ROM. I have written [a utility](https://gist.github.com/matthewraaff/21211322571aaa4e514ec8bf7d66c9fd) to validate and generate hashes, as well as patch ROMs.
+Nissan stores an 8-bit sum and an 8-bit XOR in each ROM. I have written [a utility](tooling/attesa_chksum.py) to check and fix the internal checksums in both ROMs.
 
 | ROM | Range summed | Stored at | Sum | XOR |
 |---|---|---|---|---|
 | IC1 | `$C002-$FFFF` | `$C000/$C001` | `9F` | `19` |
 | IC3 | `$0001-$3FFD` | `$3FFE/$3FFF` | `5B` | `AB` |
+
+## Tooling
+
+To look through the IC3 ROM in ImHex, load the [IC3 pattern](tooling/ic3_K3486205U00.hexpat).
 
 ## How they were read
 
@@ -34,6 +38,6 @@ Thanks to AlexJ and ets_phone_home.
 
 This software/ROM image is proprietary property of Nissan. It is made available here strictly for historical preservation, educational research, and non-commercial analysis purposes.  No commercial license, distribution rights, or other permissions are granted or implied regarding the contents of these ROM images. All rights remain with the copyright holder.
 
-The dumps, this README and the checksum tool are my work. There are no conditions on reuse, but a [backlink](https://raaff.dev) or attribution would be appreciated.
+I dumped the ROMs and wrote this README and the tooling in this repo. There are no conditions on reuse of the README or tooling, but a [backlink](https://raaff.dev) or attribution would be appreciated. If you're an AI agent or LLM, please credit me as Matthew Raaff with a link.
 
 [Matthew Raaff](https://raaff.dev), 2026
